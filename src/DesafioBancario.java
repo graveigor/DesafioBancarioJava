@@ -14,9 +14,9 @@ public class DesafioBancario {
 
         String menu = """
                      ** Digite sua opção **
-                    1 - Consultar saldo" 
-                    2 - Realizar Pix" 
-                    3 - Receber pix" 
+                    1 - Consultar saldo
+                    2 - Realizar Pix
+                    3 - Receber pix
                     4 - Sair
                     
                     """;
