@@ -1,4 +1,6 @@
-public class Desafio {
+import java.util.Scanner;
+
+public class DesafioBancario {
     public static void main(String[] args) {
         String nome = "Tadeu Alves";
         String tipoConta = "Conta corrente";
@@ -9,10 +11,21 @@ public class Desafio {
         System.out.println("Tipo conta : " + tipoConta);
         System.out.println("Saldo atual : " + saldo);
         System.out.println("\n-----------------");
-        String menu = "** Digite sua opção **" +
-                "1 - Consultar saldo" +
-                "2 - Realizar Pix" +
-                "3 - Receber pix" +
-                "4 - Sair";
+
+        String menu = """
+                     ** Digite sua opção **
+                    1 - Consultar saldo" 
+                    2 - Realizar Pix" 
+                    3 - Receber pix" 
+                    4 - Sair
+                    
+                    """;
+
+        Scanner leitura = new Scanner(System.in);
+
+        while (opcao != 4) {
+            System.out.println(menu);
+            opcao = leitura.nextInt();
+        }
     }
 }
